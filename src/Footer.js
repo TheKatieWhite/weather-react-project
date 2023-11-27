@@ -6,7 +6,11 @@ export default function Footer() {
       This project was coded by{" "}
       <a href="mailto:thekalwhite@gmail.com">Katie White</a> and is open-sourced
       on{" "}
-      <a href="https://github.com" target="_blank" rel="noreferrer">
+      <a
+        href="https://github.com/TheKatieWhite/weather-react-project"
+        target="_blank"
+        rel="noreferrer"
+      >
         github.com{" "}
       </a>
       and hosted on{" "}
