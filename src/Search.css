@@ -1,0 +1,16 @@
+#enterCity {
+  padding: 20px;
+}
+
+#city-input {
+  background-color: #f2f1f1;
+}
+
+#button-search {
+  background-color: #8e79fa;
+}
+
+#button-local {
+  background-color: white;
+  color: #8e79fa;
+}

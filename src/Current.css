@@ -1,0 +1,29 @@
+#cityName {
+  margin-left: 25px;
+  margin-bottom: 0;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 700;
+  margin-right: 25px;
+}
+
+.temptype,
+.divider {
+  font-size: 20px;
+  position: relative;
+  top: -15px;
+}
+
+.temptype {
+  text-decoration: none;
+}
+
+.currentinfo {
+  display: block;
+  margin-left: 25px;
+  margin-top: 0;
+  font-size: 14px;
+  color: grey;
+}

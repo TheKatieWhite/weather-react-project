@@ -1,0 +1,15 @@
+body {
+  text-align: center;
+}
+
+.day {
+  color: grey;
+}
+
+.forecastTemp {
+  font-size: 13px;
+}
+
+.forecast {
+    display: flex;
+}
