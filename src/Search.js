@@ -12,6 +12,7 @@ export default function Search() {
               placeholder="Enter a city..."
               autoComplete="off"
               id="city-input"
+              autoFocus="on"
             />
           </div>
           <div className="col-3">

@@ -5,3 +5,8 @@ body {
 .logo-wrapper {
   padding: 20px;
 }
+
+.header-text {
+  transform: translateY(50%);
+  color: #00A8F5
+}
