@@ -1,21 +1,22 @@
 import React, { useState } from "react";
 import axios from "axios";
+import FormattedDate from "./FormattedDate";
 
 export default function Search(props) {
   const [weatherData, setWeatherData] = useState({default: false});
   function handleResponse(response) {
-    console.log(response.data);
+    
 
 setWeatherData({
   ready: true,
   city: response.data.name,
   temperature: response.data.main.temp,
-  daytime: "Wednesday party time",
+  daytime: new Date(response.data.dt *1000),
   condition: response.data.weather[0].main,
   humidity: response.data.main.humidity,
   wind: response.data.wind.speed,
-  iconUrl: response.data.weather[0].icon,
-  description: response.data.weather[0].description,
+  iconUrl: "/images/weatherlogo.png"
+  
 
 });
 
@@ -58,7 +59,7 @@ setWeatherData({
             </h3>
             <div>
               <p className="currentinfo">
-                <span id="currentDayTime">{(weatherData.daytime)}, </span>
+                <span id="currentDayTime"><FormattedDate date={weatherData.daytime}/>, </span>
                 <span id="condition">{weatherData.condition}</span>
                 <br />
                 Humidity: <span id="humidity">{weatherData.humidity}</span>%,
@@ -86,7 +87,7 @@ setWeatherData({
   } else {
     let apiKey = "96771e971243152d6b8948878c26adde";
 
-    let city = "Tokyo";
+    
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=imperial`;
     axios.get(apiUrl).then(handleResponse);
 
