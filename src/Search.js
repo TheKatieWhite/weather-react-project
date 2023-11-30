@@ -46,7 +46,7 @@ export default function Search() {
   else {
 let apiKey = "96771e971243152d6b8948878c26adde";
 
-let city = "Tokyo";
+
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
 axios.get(apiUrl).then(handleResponse);
 
