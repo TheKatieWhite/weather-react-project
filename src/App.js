@@ -1,9 +1,8 @@
 import React from "react";
 import Header from "./Header";
-import Search from "./Search";
-import Current from "./Current";
 import Forecast from "./Forecast";
 import Footer from "./Footer";
+import Weather from "./Weather"
 
 import './App.css';
 import "./Header.css";
@@ -17,8 +16,7 @@ export default function App() {
     <div className="container">
       <div className="weather-wrapper">
         <Header />
-        <Search />
-        <Current />
+        <Weather defaultCity="Tokyo"/>
         <span className="forecastInfo">
           <Forecast />
           <Forecast />
