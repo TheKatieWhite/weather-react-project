@@ -13,13 +13,11 @@ setWeatherData({
   ready: true,
   city: response.data.name,
   temperature: response.data.main.temp,
-  daytime: new Date(response.data.dt *1000),
+  daytime: new Date(response.data.dt * 1000),
   condition: response.data.weather[0].main,
   humidity: response.data.main.humidity,
   wind: response.data.wind.speed,
-  iconUrl: "/images/weatherlogo.png"
-  
-
+  iconUrl: `https://openweathermap.org/img/w/${response.data.weather[0].icon}.png`,
 }); 
   }
 
