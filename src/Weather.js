@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import axios from "axios";
-
 import Current from "./Current";
 
 export default function Search(props) {

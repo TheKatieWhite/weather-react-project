@@ -4,19 +4,19 @@
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 55px;
   font-weight: 700;
   margin-right: 25px;
 }
 
-.temptype,
+.unit,
 .divider {
-  font-size: 20px;
+  font-size: 14px;
   position: relative;
   top: -15px;
 }
 
-.temptype {
+a {
   text-decoration: none;
 }
 
