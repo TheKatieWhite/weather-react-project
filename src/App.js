@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./Header";
-import Forecast from "./Forecast";
+
 import Footer from "./Footer";
 import Weather from "./Weather"
 
@@ -17,13 +17,9 @@ export default function App() {
       <div className="weather-wrapper">
         <Header />
         <Weather defaultCity="Tokyo"/>
-        <span className="forecastInfo">
-          <Forecast />
-          <Forecast />
-          <Forecast />
-          <Forecast />
-          <Forecast />
-        </span>
+        
+          
+       
       </div>
       <Footer />
     </div>

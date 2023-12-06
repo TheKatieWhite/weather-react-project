@@ -4,6 +4,11 @@ body {
 
 .day {
   color: grey;
+  text-align: center;
+}
+
+.forecastIcon {
+  text-align: center;
 }
 
 .forecastTemp {
@@ -12,4 +17,5 @@ body {
 
 .forecast {
     display: flex;
+    text-align: center;
 }

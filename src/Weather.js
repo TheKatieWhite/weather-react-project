@@ -1,15 +1,17 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Current from "./Current";
+import Forecast from "./Forecast";
 
 export default function Search(props) {
   const [city, setCity] = useState(props.defaultCity);
   const [weatherData, setWeatherData] = useState({default: false});
   function handleResponse(response) {
-    
+    console.log(response.data);
 
 setWeatherData({
   ready: true,
+  coordinates: response.data.coord,
   city: response.data.name,
   temperature: response.data.main.temp,
   daytime: new Date(response.data.dt * 1000),
@@ -65,8 +67,14 @@ setCity(event.target.value);
             </div>
           </div>
         </form>
-        <Current data={weatherData}/>
-        
+        <Current data={weatherData} />
+        <span className="forecastInfo">
+          <Forecast coordinates={weatherData.coordinates} />
+          <Forecast />
+          <Forecast />
+          <Forecast />
+          <Forecast />
+        </span>
       </div>
     );
     
