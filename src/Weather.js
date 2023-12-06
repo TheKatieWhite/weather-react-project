@@ -70,10 +70,6 @@ setCity(event.target.value);
         <Current data={weatherData} />
         <span className="forecastInfo">
           <Forecast coordinates={weatherData.coordinates} />
-          <Forecast />
-          <Forecast />
-          <Forecast />
-          <Forecast />
         </span>
       </div>
     );

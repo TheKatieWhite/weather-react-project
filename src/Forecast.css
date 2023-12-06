@@ -2,6 +2,14 @@ body {
   text-align: center;
 }
 
+.forecastSpan {
+  display: flex;
+}
+
+.weatherForecast {
+  text-align: center;
+}
+
 .day {
   color: grey;
   text-align: center;
