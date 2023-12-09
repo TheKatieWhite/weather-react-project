@@ -37,8 +37,10 @@ export default function WeatherForecastDay(props) {
       <div className="weatherForecast">
         <p className="day">{day()}</p>
         <p className="forecastIcon">
-          <img src="https://openweathermap.org/img/w/{props.data.weather[0].icon}.png" alt=""/>
-          {props.data.weather[0].icon}
+          <img
+            src={`https://openweathermap.org/img/w/${props.data.weather[0].icon}.png`}
+            alt=""
+          />
         </p>
         <p className="forecastTemp">
           <strong>{maxTemp()}</strong> {minTemp()}

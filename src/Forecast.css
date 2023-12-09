@@ -4,6 +4,13 @@ body {
 
 .forecastSpan {
   display: flex;
+  
+}
+
+.forecastDay {
+  display: flex;
+  padding: 15px;
+  
 }
 
 .weatherForecast {

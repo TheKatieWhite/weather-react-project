@@ -17,7 +17,18 @@ console.log(props);
   if(loaded) {
     return (
       <span className="forecastSpan">
-      <WeatherForecastDay data={forecast[0]}/>
+        
+        {forecast.map(function(dailyForecast, index){
+          if (index < 6) {
+            return (
+          <div className="forecastDay" key={index}>
+            
+            <WeatherForecastDay data={dailyForecast}/>
+            </div>
+          )
+          }
+        })}
+      
      
      
       
