@@ -31,7 +31,9 @@ console.log(props);
             
             <WeatherForecastDay data={dailyForecast}/>
             </div>
-          )
+          );
+          } else {
+            return null;
           }
         })}
       
