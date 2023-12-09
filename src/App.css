@@ -19,3 +19,8 @@
   display: flex;
   justify-content: space-evenly;
 }
+
+.convertStatement {
+  text-align: center;
+  font-size: 12px;
+}

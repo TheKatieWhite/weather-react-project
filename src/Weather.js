@@ -71,6 +71,12 @@ setCity(event.target.value);
         <span className="forecastInfo">
           <Forecast coordinates={weatherData.coordinates} />
         </span>
+        <div>
+          <p className="convertStatement">
+            Forecast temperatures shown in fahrenheit. To convert to celsius use
+            formula (xF°-32) x 5/9 = C°.
+          </p>
+        </div>
       </div>
     );
     
